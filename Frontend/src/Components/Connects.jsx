@@ -20,14 +20,7 @@ const Connect = () => {
           </div>
           <button type="submit" className="connect-login-btn">Se Connecter</button>
         </form>
-        <div className="connect-alternative-login">
-          <p>Ou inscrivez-vous en Démo  avec :</p>
-          <div className="connect-social-links">
-            <Link to=""><img src="./twitter.png" alt="Twitter" /></Link>
-            <Link to=""><img src="./gmail.png" alt="Gmail" /></Link>
-            <Link to="facebook.com"><img src="./facebook.png" alt="Facebook" /></Link>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

@@ -1,11 +1,11 @@
 import React from 'react'
-import Connect from '../Components/Connect'
+import Connects from '../Components/Connects'
 import Footer from '../Components/Footer'
 const SeConnecter = () => {
   return (
  <div>   
   
-      <Connect/>
+      <Connects/>
 
   </div>
  
