@@ -1,0 +1,62 @@
+/* General flex center class */
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Navbar size and bottom border */
+  .navbarsize {
+    width: 100%;
+    background-color: #f1f1f1; /* Same background color as the footer */
+    border-bottom: 1px solid #ccc; /* Matching border */
+  }
+  
+  /* Navbar container with flexbox */
+  .navbarcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 1rem 0; /* Added padding for consistent spacing */
+  }
+  
+  /* Navbar elements */
+  .navbarelements {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .navbarelements a {
+    text-decoration: none;
+    color: inherit; /* Maintain the same color for text */
+  }
+  
+  /* Login button image */
+  .loginbtn img {
+    width: 40px;
+  }
+  
+  /* Logo container */
+  .logo {
+    width: 70px;
+  }
+  
+  .logo img {
+    width: 100%; /* Adjusted to fit the container */
+  }
+  
+  /* Additional container styles */
+  .h-container {
+    justify-content: space-between;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbarelements {
+      flex-direction: column;
+      align-items: flex-start; /* Adjust for better alignment */
+    }
+  }
+  

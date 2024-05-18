@@ -1,0 +1,96 @@
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .connect-container {
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  .formlogin {
+    background: #ccc;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+
+}
+
+  .connect-form-wrapper {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .connect-logo img {
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .connect-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .connect-form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .connect-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .connect-form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .connect-login-btn {
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .connect-login-btn:hover {
+    background-color: #333;
+  }
+  
+  .connect-alternative-login {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .connect-alternative-login p {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .connect-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .connect-social-links a img {
+    height: 40px;
+    width: 40px;
+  }
+  

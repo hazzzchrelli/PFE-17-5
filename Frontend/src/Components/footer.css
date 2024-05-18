@@ -1,0 +1,35 @@
+/* Footer container */
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: #f1f1f1;
+  border-top: 1px solid #ccc;
+  position: fixed; /* Set position to fixed */
+  bottom: 0; /* Align to the bottom */
+  width: 100%; /* Full width */
+}
+
+/* Footer sections */
+.footerSection {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+/* Footer section titles */
+.footerSection h3 {
+  margin-bottom: 1rem;
+}
+
+/* Social media links */
+.socialMediaLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Social media icons */
+.socialMediaLinks img {
+  width: 30px;
+  height: 30px;
+}
