@@ -12,20 +12,27 @@ html, body {
 }
 
 /* Main container to cover the entire page */
-.mainContainer {
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Contact form container to take available space between navbar and footer */
+.contact-form-container {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    height: 100%;
+    flex: 1; /* Take up remaining space */
     background: linear-gradient(135deg, #f1f1f1, #e1e1e1); /* Gradient background */
 }
 
 /* Form styling */
 .formcontact {
-    background: #b4aaaa;
+    background: #ffffff;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgb(247, 246, 246);
     width: 100%;
     max-width: 600px;
     text-align: center; /* Center the content inside the form */
@@ -33,4 +40,44 @@ html, body {
 
 .formcontact form {
     width: 100%; /* Full width form */
+    align-items: center;
+}
+
+/* Input and label styling */
+.formcontact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left; /* Align labels to the left */
+}
+
+.formcontact input[type="text"],
+.formcontact input[type="email"],
+.formcontact textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.formcontact button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formcontact button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: left;
 }

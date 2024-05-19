@@ -1,0 +1,55 @@
+/* Home.css */
+
+/* Styling the section to use flexbox for layout */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Styling the content header */
+  .col-content-header {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Styling the image header */
+  .col-img-header {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Ensure the image fits within its container */
+  .col-img-header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Style the main heading */
+  .col-content-header h1 {
+    color: #333; /* Dark grey color for the text */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the paragraph texts */
+  .col-content-header p {
+    color: #666; /* Medium grey color for the text */
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  
+  /* Style the sub-title */
+  .sub_title_header {
+    color: #444; /* Darker grey color for the sub-title */
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  

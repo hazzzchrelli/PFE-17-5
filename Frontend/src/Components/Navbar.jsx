@@ -15,11 +15,13 @@ const Navbar = () => {
         </Link>
 
         <Link to='/service'>
-          <h3>Service</h3>
+          <h3>Secteur d'Activité</h3>
         </Link>
 
         <Link to='/Contact'>
           <h3>Contact</h3>
+          
+          
         </Link>
       </div>
      

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './ContactUs.css'
+import './ContactUs.css';
+
 const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -20,11 +21,11 @@ const ContactUs = () => {
 
   const validate = () => {
     const errors = {};
-    if (!formData.name) errors.name = "Name is required";
-    if (!formData.email) errors.email = "Email is required";
-    else if (!/\S+@\S+\.\S+/.test(formData.email)) errors.email = "Email address is invalid";
-    if (!formData.subject) errors.subject = "Subject is required";
-    if (!formData.message) errors.message = "Message is required";
+    if (!formData.nom) errors.nom = " Veuiller saisir le nom";
+    if (!formData.email) errors.email = " Veuiller saisir l Email";
+    else if (!/\S+@\S+\.\S+/.test(formData.email)) errors.email = "Adresse email est invalide";
+    if (!formData.objet) errors.objet = " Veuiller saisir l'objet";
+    if (!formData.message) errors.message = " Veuiller saisir votre message";
     return errors;
   };
 
@@ -35,7 +36,7 @@ const ContactUs = () => {
       // Form submission logic here
       console.log('Form submitted:', formData);
       alert('Form submitted successfully');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      setFormData({ nom: '', email: '', objet: '', message: '' });
       setErrors({});
     } else {
       setErrors(validationErrors);
@@ -43,50 +44,57 @@ const ContactUs = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} >
-      <div>
-        <label>Name:</label>
-        <input
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-        />
-        {errors.name && <p style={{ color: 'red' }}>{errors.name}</p>}
-      </div>
-      <div>
-        <label>Email:</label>
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-        {errors.email && <p style={{ color: 'red' }}>{errors.email}</p>}
-      </div>
-      <div>
-        <label>Subject:</label>
-        <input
-          type="text"
-          name="subject"
-          value={formData.subject}
-          onChange={handleChange}
-        />
-        {errors.subject && <p style={{ color: 'red' }}>{errors.subject}</p>}
-      </div>
-      <div>
-        <label>Message:</label>
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-        ></textarea>
-        {errors.message && <p style={{ color: 'red' }}>{errors.message}</p>}
-      </div>
-      <div>
-        <button type="submit">Submit</button>
-      </div>
-    </form>
+    <section className='contactcontainer  ' >
+      <h2 className='flexCenter'>Formulaire du contact</h2>
+    <div className='flexCenter'>
+    <div className="formcontact " >
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>Nom:</label>
+          <input
+            type="text"
+            name="nom"
+            value={formData.nom}
+            onChange={handleChange}
+          />
+          {errors.nom && <p className="error-message">{errors.nom}</p>}
+        </div>
+        <div>
+          <label>Email:</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+          {errors.email && <p className="error-message">{errors.email}</p>}
+        </div>
+        <div>
+          <label>Objet:</label>
+          <input
+            type="text"
+            name="objet"
+            value={formData.objet}
+            onChange={handleChange}
+          />
+          {errors.objet && <p className="error-message">{errors.objet}</p>}
+        </div>
+        <div>
+          <label>Message:</label>
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+          ></textarea>
+          {errors.message && <p className="error-message">{errors.message}</p>}
+        </div>
+        <div>
+          <button type="submit">Envoyer</button>
+        </div>
+      </form>
+    </div>  
+    </div>
+    </section>
   );
 };
 

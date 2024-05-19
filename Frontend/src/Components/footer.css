@@ -6,7 +6,7 @@
   padding: 2rem;
   background-color: #f1f1f1;
   border-top: 1px solid #ccc;
-  position: fixed; /* Set position to fixed */
+  
   bottom: 0; /* Align to the bottom */
   width: 100%; /* Full width */
 }

@@ -19,8 +19,15 @@ const Connect = () => {
             <input type="password" id="password" placeholder="Entrez votre mot de passe" required />
           </div>
           <button type="submit" className="connect-login-btn">Se Connecter</button>
+
+
+
+          
         </form>
         
+
+
+
       </div>
     </section>
   );

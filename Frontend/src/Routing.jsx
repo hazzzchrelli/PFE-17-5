@@ -8,7 +8,7 @@ function Routing() {
   return (
 <Routes>
 <Route path='/' element={<App/>}/>
-<Route path='/contact' element={<Contact/>}/>
+<Route path='/Contact' element={<Contact/>}/>
 <Route path='/SeConnecter' element={<SeConnecter/>}/>
 
 </Routes>  
